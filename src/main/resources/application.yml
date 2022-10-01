@@ -1,0 +1,30 @@
+
+
+server:
+  port: 9900
+
+spring:
+  profiles:
+    include: >
+      core-config-default
+
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      'hibernate.dialect': org.hibernate.dialect.MySQL8Dialect
+
+  datasource:
+    url: jdbc:mysql://local-ims-my.ziongroup.net:9951/gathering?autoReconnect=true&characterEncoding=UTF-8&useUnicode=true&characterEncoding=UTF-8&connectTimeout=3000&socketTimeout=3000&allowPublicKeyRetrieval=true&useSSL=false
+    username: gathering
+    password: gathering
+
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: gathering-db-pool
+      connection-timeout: 3000
+      maximum-pool-size: 200
+      minimum-idle: 2
+      connection-test-query: SELECT 1

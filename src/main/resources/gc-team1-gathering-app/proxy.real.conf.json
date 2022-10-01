@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://app.teepee.kr",
+    "secure": false
+  }
+}

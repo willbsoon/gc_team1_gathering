@@ -1,0 +1,47 @@
+.focusing-title {
+  .alert-dialog-title {
+    color: red;
+  }
+}
+
+.mat-dialog-content {
+  white-space: pre-wrap;
+}
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+
+  .delete-or-cancel {
+
+    &.confirm-yes {
+      color: #E31B0C;
+    }
+
+    &.confirm-no {
+      color: #0000008a;
+    }
+  }
+
+  .ok {
+
+    &.confirm-yes {
+      color: #0000008a;
+    }
+  }
+
+  .ok-cancel {
+    &.confirm-yes {
+      color: #7879F1;
+    }
+
+    &.confirm-no {
+      color: #7879F1;
+    }
+  }
+
+}

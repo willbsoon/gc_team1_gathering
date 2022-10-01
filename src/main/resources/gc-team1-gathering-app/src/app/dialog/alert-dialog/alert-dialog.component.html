@@ -1,0 +1,11 @@
+<div class="{{data.cssString}}">
+  <h2 mat-dialog-title class="alert-dialog-title" *ngIf="data.title">{{data.title}}</h2>
+  <mat-dialog-content>
+    <p>{{data.content}}</p>
+    <a href="{{data.link}}" *ngIf="data.link">{{data.linkDescription}}</a>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button class="ok confirm-yes"
+            tabindex="-1" (click)="ok()">{{data.okString || '확인' }}</button>
+  </mat-dialog-actions>
+</div>
